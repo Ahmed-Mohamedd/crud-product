@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1 class="text-center my-5">Product List</h1>
+    
+    <form  class="bg-danger w-75 m-auto p-3">
+        <div class="group m-3">
+            <label for="product-name" class="text-info fs-5 mb-1"> product Name</label>
+            <input type="text" id="product-name" class="d-block form-control ">
+        </div>
+        <div class="group m-3">
+            <label for="product-price" class="text-info fs-5 mb-1"> product Price</label>
+            <input type="text" id="product-price" class="d-block form-control ">
+        </div>
+        <div class="group m-3">
+            <label for="product-category" class="text-info fs-5 mb-1"> product Category</label>
+            <input type="text" id="product-category" class="d-block form-control ">
+        </div>
+        <div class="group m-3">
+            <label for="product-desc" class="text-info fs-5 mb-1"> product Description</label>
+            <textarea  id="product-desc" class="d-block  form-control "> </textarea>
+        </div>
+        <button class="btn btn-primary float-end " id="get-data" type="button"  > Add Product</button>
+        <div class="clearfix"></div>
+    </form>
+
+    <div class="w-75 m-auto mt-4">
+        <input type="text" class="form-control" placeholder="Search...." id="search">
+    </div>
+    
+    <table class="table table-striped mt-5 w-75 m-auto">
+        <thead>
+            <th>index</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Category</th>
+            <th>Product Description</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </thead>
+        <tbody id="t-body">
+
+        </tbody>
+    </table>
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
